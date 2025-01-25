@@ -1,33 +1,42 @@
-/* eslint-disable react/jsx-no-undef */
-/* eslint-disable no-unused-vars */
 import React from 'react'
+import {
+  Hero,
+  PopularProducts,
+  SuperQuality,
+  Services,
+  SpecialOffer,
+  CustomerReviews,
+  Subscribe,
+  Footer,
+} from './sections/index.js'
 
 const App = () => {
   return (
     <main className='relative'>
       <Nav />
-      <section className='xl: padding-l wide: padding-r padding-b'>
+      <h1> raj soren</h1>
+      <section>
         <Hero />
       </section>
-      <section className='padding'>
+      <section>
         <PopularProducts />
       </section>
-      <section className='padding'>
+      <section>
         <SuperQuality />
       </section>
-      <section className='padding-x py-10'>
+      <section >
         <Services/>
       </section>
-      <section className='padding'>
+      <section >
         <SpecialOffers/>
       </section>
-      <section className='bg-pale-blue padding'>
+      <section>
         <CustomerReviews/>
       </section>
-      <section className='padding-x sm:py-32 py-16 w-full'>
+      <section>
         <Subscribe />
       </section>
-      <section className='bg-black padding-x padding-t'>
+      <section>
         <Footer/>
       </section>
     </main>

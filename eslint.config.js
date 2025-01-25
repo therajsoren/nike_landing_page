@@ -28,18 +28,13 @@ export default [
       ...react.configs.recommended.rules,
       ...react.configs['jsx-runtime'].rules,
       ...reactHooks.configs.recommended.rules,
+      // https://stackoverflow.com/questions/42541559/eslint-with-react-gives-no-unused-vars-errors
+      "react/jsx-uses-react": "error",   
+     "react/jsx-uses-vars": "error" ,
       'react/jsx-no-target-blank': 'off',
       'react-refresh/only-export-components': [
         'warn',
         { allowConstantExport: true },
-      ],
-      "react/prop-types": "off", 
-      'no-unused-vars': [
-        'error',
-        {
-          varsIgnorePattern: '^React$^',
-          argsIgnorePattern: '^-',
-        },
       ],
     },
   },
